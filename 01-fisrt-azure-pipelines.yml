@@ -6,9 +6,8 @@ pool:
   vmImage: ubuntu-latest
 
 steps:
-- script: echo Hello, world changed! $(firstVariable)
+- script: echo Hello, world changed! $(firstVariable) $(Build.BuildId) $(Build.SourceDirectory)
   displayName: 'Run a one-line script'
-
 - script: |
     echo Add other tasks to build, test, and deploy your project.
     echo See https://aka.ms/yaml
