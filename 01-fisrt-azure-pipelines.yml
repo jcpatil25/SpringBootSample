@@ -6,7 +6,7 @@ pool:
   vmImage: ubuntu-latest
 
 steps:
-- script: echo Hello, world changed! $(firstVariable) $(Build.BuildId) $(Build.SourcesDirectory)
+- script: echo Hello, world updated! $(firstVariable) $(Build.BuildId) $(Build.SourcesDirectory)
   displayName: 'Run a one-line script'
 - script: |
     echo Add other tasks to build, test, and deploy your project.
