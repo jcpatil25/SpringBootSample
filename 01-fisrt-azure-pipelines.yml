@@ -23,8 +23,8 @@ jobs:
       displayName: 'multi-line-script'
 - job: Job3
   dependsOn: 
-    Job1
-    Job2
+   - Job1
+   - Job2
   steps: 
     - script: echo job3
 - job: Job4
