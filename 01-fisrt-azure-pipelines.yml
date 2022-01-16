@@ -8,7 +8,7 @@ pool:
 jobs:
 - job: Job1
   steps:
-  - script: echo Hello, world updated!
+  - script: echo job1
     displayName: 'Run a one-line script'
   - script: |
       echo Add other tasks to build, test, and deploy your project.
@@ -16,7 +16,7 @@ jobs:
     displayName: 'Run a multi-line script'
 - job: Job2
   steps:
-    - script: echo single line script
+    - script: echo job2
       displayName: 'one-line-script'
     - script: |
         echo multiline script
