@@ -21,3 +21,14 @@ jobs:
     - script: |
         echo multiline script
       displayName: 'multi-line-script'
+- job: Job3
+  dependsOn: 
+    Job1
+    Job2
+  steps: 
+    - script: echo job3
+- job: Job4
+  dependsOn: 
+    Job2
+  steps: 
+    - script: echo job4
